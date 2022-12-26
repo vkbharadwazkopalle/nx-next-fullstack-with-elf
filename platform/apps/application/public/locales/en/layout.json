@@ -1,0 +1,11 @@
+{
+    "header": {
+        "title": "Full stack Next App"
+    },
+    "routes": {
+        "estimates": "Estimates"
+    },
+    "footer": {
+        "copyright": "@copy; Copyright 2022-23. All right Reserved. "
+    }
+}
