@@ -1,4 +1,9 @@
 import { FC } from 'react';
+
+import Box from '@mui/material/Box';
+
+import Paper from '@mui/material/Paper';
+
 import Footer from '../footer/footer';
 import Header from '../header/header';
 import styles from './layout.module.scss';
@@ -14,7 +19,13 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
     <>
       <div className="layout">
         <Header />
-        <main>{children}</main>
+          <main>
+            <Paper elevation={3}>
+              <Box sx={{ width: '100%' }}>
+                {children}
+              </Box>
+            </Paper>
+          </main>
         <Footer />
       </div>
     </>
