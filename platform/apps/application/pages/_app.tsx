@@ -1,3 +1,4 @@
+import { Layout } from '@platform/ui';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
@@ -9,8 +10,10 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to application!</title>
       </Head>
-      <main className="app">
-        <Component {...pageProps} />
+      <main className="container">
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </main>
     </>
   );

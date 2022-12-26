@@ -18,13 +18,9 @@ export function Index() {
    * Note: The corresponding styles are in the ./index.scss file.
    */
   return (
-    <div className={styles.page}>
-      <div className="wrapper">
-        <div className="container">
-          <Layout children={<OpenEstimatesContainer />}/>
-        </div>
-      </div>
-    </div>
+    <>
+      <OpenEstimatesContainer />
+    </>
   );
 }
 

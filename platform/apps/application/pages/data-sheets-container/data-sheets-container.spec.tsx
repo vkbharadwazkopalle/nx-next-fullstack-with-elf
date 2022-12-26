@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import Utils from './utils';
+import DataSheetsContainer from '.';
 
-describe('Utils', () => {
+describe('DataSheetsContainer', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Utils />);
+    const { baseElement } = render(<DataSheetsContainer />);
     expect(baseElement).toBeTruthy();
   });
 });
