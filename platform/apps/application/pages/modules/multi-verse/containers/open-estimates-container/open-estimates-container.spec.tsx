@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import OpenEstimates from './open-estimates-container';
+import OpenEstimates from '.';
 
 describe('OpenEstimates', () => {
   it('should render successfully', () => {

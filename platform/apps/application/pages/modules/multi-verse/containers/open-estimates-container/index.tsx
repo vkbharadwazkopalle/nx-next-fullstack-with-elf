@@ -31,7 +31,7 @@ function LinkTab(props: any) {
       component="a"
       onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         event.preventDefault();
-        router.push(props.href, 'data-sheets-container', { shallow: false });
+        router.push(props.href, 'data-sheets', { shallow: false });
       }}
       {...props} />
   );
@@ -60,7 +60,9 @@ export function OpenEstimatesContainer(props: OpenEstimatesProps) {
               );
             }}>Open Data sheets</Link> */}
           <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
-            <LinkTab label="Open Data sheets" href="/containers/data-sheets-container" />
+            <LinkTab label="Open Data sheets" 
+              href="/modules/multi-verse/containers/open-estimates-container/containers/data-sheets-container"
+            />
           </Tabs>
         </Box>
       </Paper>

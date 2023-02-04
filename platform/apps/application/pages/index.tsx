@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import styles from './index.module.scss';
 import { Layout } from '@platform/ui';
 import { GetStaticProps } from 'next';
-import OpenEstimatesContainer from '../modules/multi-verse/containers/open-estimates-container/open-estimates-container';
+import Link from 'next/link';
 
 type Props = {}
 
@@ -19,7 +19,11 @@ export function Index() {
    */
   return (
     <>
-      <OpenEstimatesContainer />
+      <Link 
+        href="/modules/multi-verse/containers/open-estimates-container"
+        as="multi-verse/open">
+          Open Estimates
+        </Link>
     </>
   );
 }
